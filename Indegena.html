@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Setting the viewport for Media Query -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="PSD convert into hrml without using any framework">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Dattatray Laykar">
+    <link href="./src/css/Indegena.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+
+    <title>Indegene</title>
+
+</head>
+
+<body onload="hmbDisplay()">
+    <!--start main section-->
+    <section id="main-section">
+        <!-- Header Start -->
+        <section id="header" class="">
+            <header>
+                <!--javascript:void() is used for undefined value, after click href then its not reload the page, run fast & precise program-->
+                <a href="javascript:void()"><img src="./src/img/logo.png"></img></a>
+                <div class="icons">
+                    <!--Take ul list for acting coloumn to row using flex box-->
+                    <ul>
+                        <li><a href="javascript:void()"><img src="./src/img/twitter.png"></a></li>
+                        <li><a href="javascript:void()"><img src="./src/img/fb.png"></a></li>
+                        <li><a href="javascript:void()"><img src="./src/img/linked-in.png"></a></li>
+
+                    </ul>
+                </div>
+                <!--Start of the hamburger-->
+                <button class="hamburger" onclick="changeDisplay()"><span
+                        style="color: #ccc;margin-right: 10px;">MENU</span>&#9776;</button>
+                <button class="cross" onclick="changeDisplay()"><span
+                        style="color: #ccc;margin-right: 10px;">MENU</span>&#9776;</button>
+                <!--End of the hamburger-->
+            </header>
+            <script> menu.style.display = "none";</script>
+            <!--Here write href id for link menu section wise-->
+            <div id="menu" style="font-weight: 500" ; display="none" ;>
+                <ul>
+                    <a href="#menu">
+                        <li>Home</li>
+                    </a>
+                    <a href="javascript:void()">
+                        <li>About</li>
+                    </a>
+                    <a href="#services">
+                        <li>Product</li>
+                    </a>
+                    <a href="#upcomming-section">
+                        <li>Event</li>
+                    </a>
+                    <a href="javascript:void()">
+                        <li>Calender</li>
+                    </a>
+                    <a href="#our-blog">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#bg-img1">
+                        <li>Contact</li>
+                    </a>
+                    <a class="logo" href="javascript:void()"><img src="./src/img/fb.png"></a>
+                    <a class="logo" href="javascript:void()"><img src="./src/img/twitter.png"></a>
+                    <a class="logo" href="javascript:void()"><img src="./src/img/linked-in.png"></a>
+                </ul>
+            </div>
+
+        </section>
+
+        <!--Start banner section-->
+        <section id="banner-first">
+            <div class="banner-content">
+                <div class="banner-heading">
+                    <h2>Enterprise Marketing and Customer Experience</h2>
+                    <h3>LEVERAGE DATA TO DRIVE PERSONALIZATION AT SCALE</h3>
+                </div>
+                <div class="banner-button">
+                    <a href="javascript:void()" class="global">The Global Transition</a>
+                    <a href="javascript:void()" class="explore">Explore</a>
+                </div>
+            </div>
+        </section>
+        <!--End banner section-->
+
+        <!-- Digital savvy section start -->
+        <section id="digital-savvy">
+            <div class="left-section-savvy">
+                <div class="banner-heading">
+                    <h2>THE DIGITAL SAVVY PHARMA MARKETER 2020</h2>
+                    <h3>“Must have tool for every pharma marketer ”</h3>
+                    <a href="javascript:void()" class="download">download</a>
+                </div>
+            </div>
+            <div class="right-section-savvy">
+            </div>
+        </section>
+        <div class="clear"></div>
+        <!-- Digital savvy section End -->
+
+        <!-- Services Section Start-->
+        <section id="services">
+
+            <div class="service-heading">
+                <h3>COMPANY</h3>
+                <p>Services</p>
+            </div>
+
+            <!--In service section created two part left and right & devided 50% of page each -->
+            <div class="service-left">
+                <div style="margin-bottom: 30px;" class="service-left-content">
+                    <h5 class="service-left-heading">Customer Experience</h5>
+                    <p class="service-left-para">A must have tool for pharma marketers to gain insights into the latest
+                        channel preferences, marketing budget allocations, technology utilization</p>
+                </div>
+                <div style="margin-bottom: 30px;" class="service-left-img">
+                    <img src="./src/img/1.png" alt="">
+                </div>
+                <div class="empty-space"></div>
+                <div style="margin-bottom: 30px;" class="service-left-content">
+                    <h5 class="service-left-heading">Data and Analytics</h5>
+                    <p class="service-left-para">A must have tool for pharma marketers to gain insights into the latest
+                        channel preferences, marketing budget allocations, technology utilization</p>
+                </div>
+                <div style="margin-bottom: 30px;" class="service-left-img">
+                    <img src="./src/img/2.png" alt="">
+                </div>
+
+                <div style="margin-bottom: 30px;" class="service-left-content">
+                    <h5 class="service-left-heading">Digital Transformation</h5>
+                    <p class="service-left-para">A must have tool for pharma marketers to gain insights into the latest
+                        channel preferences, marketing budget allocations, technology utilization</p>
+                </div>
+                <div style="margin-bottom: 30px;" class="service-left-img">
+                    <img src="./src/img/3.png" alt="">
+                </div>
+            </div>
+
+            <div class="service-right">
+                <div style="margin-bottom: 30px;" class="service-right-content">
+                    <h5 class="service-right-heading">Co-commercialization</h5>
+                    <p class="service-right-para">A must have tool for pharma marketers to gain insights into the latest
+                        channel preferences, marketing budget allocations, technology utilization</p>
+                </div>
+                <div style="margin-bottom: 30px;" class="service-right-img">
+                    <img src="./src/img/4.png" alt="">
+                </div>
+
+                <div style="margin-bottom: 30px;" class="service-right-content">
+                    <h5 class="service-right-heading">R&D / Medical Transformation</h5>
+                    <p class="service-right-para">A must have tool for pharma marketers to gain insights into the latest
+                        channel preferences, marketing budget allocations, technology utilization</p>
+                </div>
+                <div style="margin-bottom: 30px;" class="service-right-img">
+                    <img src="./src/img/5.png" alt="">
+                </div>
+
+                <div style="margin-bottom: 30px;" class="service-right-content">
+                    <h5 class="service-right-heading">Omnipresence CXM Platform</h5>
+                    <p class="service-right-para">A must have tool for pharma marketers to gain insights into the latest
+                        channel preferences, marketing budget allocations, technology utilization</p>
+                </div>
+                <div style="margin-bottom: 30px;" class="service-right-img">
+                    <img src="./src/img/6.png" alt="">
+                </div>
+            </div>
+
+        </section>
+        <!-- End Services Section End-->
+
+        <!-- Start Testimonials section -->
+        <section class="testimonials">
+
+            <div class="testi-heading">
+                <h1>INSPIRATIONAL TESTIMONY</h1>
+            </div>
+
+            <div>
+                <div class="item">
+                    <img src="./src/img/person.png" class="m1" alt="">
+                    <p id="change1">As one of the cofounders and the CEO, He is
+                        responsible for the company’s strategy.</p>
+                    <p id="rchange1" class="roleChange">
+                        CEO
+                    </p>
+                </div>
+                <div class="itemSel">
+                    <img src="./src/img/person.png" class="m2" alt="">
+                    <p id="change2" class="ptst">As the President, he is
+                        responsible for new strategic
+                        initiatives.</p>
+                    <p id="rchange2" class="roleChange">
+                        Precident
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="./src/img/person.png" class="m3" alt="">
+                    <p id="change3" class="ptst">Is responsible for global
+                        business development and
+                        strategic account
+                        management.</p>
+                    <p id="rchange3" class="roleChange">
+                        Executive VP
+                    </p>
+                </div>
+
+            </div>
+            <div class="slider">
+                <div class="images">
+                    <input type="radio" name="slide" id="img1" checked onclick="myfunction1(1)">
+                    <input type="radio" name="slide" id="img2" onclick="myfunction1(2)">
+                    <input type="radio" name="slide" id="img3" onclick="myfunction2(3)">
+                    <input type="radio" name="slide" id="img4" onclick="myfunction2(4)">
+                    <input type="radio" name="slide" id="img5">
+                </div>
+            </div>
+            <div class="dots">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+                <label for="img4"></label>
+                <label for="img5"></label>
+            </div>
+        </section>
+        <!-- End Testimonials section -->
+
+        <!-- Start upcomming Events section-->
+
+        <section id="upcomming-section">
+            <div class="upcomming-heading">
+                <h2>UPCOMING EVENTS</h2>
+            </div>
+
+            <div class="upcomming-event-box">
+                <div class="upcomming-event-left-box">
+                    <img src="./src/img/thumbnail.png" alt="">
+                </div>
+                <div class="upcomming-event-right-box">
+                    <h2>Global Pharmaceutical Regulatory Affairs Summit</h2>
+                    <p class="calender">Monday, 8:00 AM - Tuesday, 8:00 PM</p>
+                    <p class="location">Madisson Hotel</p>
+                    <p class="address">203 St. Mountain View, San Franciso, California, USA</p>
+                    <a href="javscript:void()">Read More</a>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="upcomming-event-left-box">
+                    <img src="./src/img/thumbnail.png" alt="">
+                </div>
+                <div class="upcomming-event-right-box">
+                    <h2>World Drug Safety Congress Europe</h2>
+                    <p class="calender">Monday, 8:00 AM - Tuesday, 8:00 PM</p>
+                    <p class="location">Madisson Hotel</p>
+                    <p class="address">203 St. Mountain View, San Franciso, California, USA</p>
+                    <a href="javscript:void()">Read More</a>
+                </div>
+                <div class="clear"></div>
+
+                <div class="upcomming-event-left-box">
+                    <img src="./src/img/thumbnail.png" alt="">
+                </div>
+                <div class="upcomming-event-right-box">
+                    <h2>Real World Data and Analytics Centers of Excellence</h2>
+                    <p class="calender">Monday, 8:00 AM - Tuesday, 8:00 PM</p>
+                    <p class="location">Madisson Hotel</p>
+                    <p class="address">203 St. Mountain View, San Franciso, California, USA</p>
+                    <a href="javscript:void()">Read More</a>
+                </div>
+                <div class="clear"></div>
+                <div class="upcomming-event-left-box">
+                    <img src="./src/img/thumbnail.png" alt="">
+                </div>
+                <div class="upcomming-event-right-box">
+                    <h2>4th Promotional Review Committee Compliance & Best Practice</h2>
+                    <p class="calender">Monday, 8:00 AM - Tuesday, 8:00 PM</p>
+                    <p class="location">Madisson Hotel</p>
+                    <p class="address">203 St. Mountain View, San Franciso, California, USA</p>
+                    <a href="javscript:void()">Read More</a>
+                </div>
+
+            </div>
+            <div class="clear"></div>
+
+
+        </section>
+
+        <!-- End upcomming Events section-->
+
+
+        <!-- Start Blog section -->
+        <section id="our-blog">
+            <div class="container">
+                <div class="text-center">
+                    <h2>RECENT BLOG</h2>
+                    <p class="oursome"> Our Blog</p>
+                </div>
+                <div class="row mt-5">
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/img/thumbnail-laptop.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a style="    color: #b69874;font-weight: 600;" href="javascript:void()">
+                                        <p style="font-size: 42px;margin: 0;    color: #b69874;">18</p> January 2019
+                                    </a>
+                                </h5>
+                                <p class="date-author">
+                                    Press Release
+                                </p>
+                                <p class="card-text">
+                                    Indegene Acquires DT Associates, Provides End-To-End Enterprise Solution for
+                                    Customer Excellence — from Consulting to Operations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/img/thumbnail-laptop.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a style="    color: #b69874;font-weight: 600;" href="#">
+                                        <p style="font-size: 42px;margin: 0;    color: #b69874;">18</p> January 2019
+                                    </a>
+                                </h5>
+                                <p class="date-author">
+                                    Webinars
+                                </p>
+                                <p class="card-text">
+                                    Healthy Workplaces Conference & Awards 2019-Indegene enters "Platinum League of
+                                    Healthy Workplaces"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="./src/img/thumbnail-laptop.png" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a style="    color: #b69874;font-weight: 600;" href="#">
+                                        <p style="font-size: 42px;margin: 0;    color: #b69874;">18</p> January 2019
+                                    </a>
+                                </h5>
+                                <p class="date-author">
+                                    Press Release
+                                </p>
+                                <p class="card-text">
+                                    Exemplary PV solution to argument efficiency in small and medium size pharma
+                                    companies
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- End Blog section -->
+
+
+        <!--Start Footer section-->
+        <!-- Start News letter section -->
+        <section class="bg-img text-center">
+            <div id="bg-img1"></div>
+            <div class="container">
+                <h2>
+                    <strong>NEWSLETTER</strong>
+                </h2>
+                <br><br>
+                <form class="form-subscribe" action="javascript:void()">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-lg" placeholder="Enter email address"
+                            style="font-weight: 600;">
+                        <span class="input-group-btn">
+                            <button class="btn btn-success btn-lg" type="btn" style="color: white;">Subscribe</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+            <p>© 2019 Indegene. All rights reserved | <a href="javascript:void()"> Contact Us </a> | <a
+                    href="javascript:void()"> Privacy Policy </a>
+                | <a href="javascript:void()"> CSR Policy </a></p>
+        </section>
+
+        <!-- End News letter section -->
+        <!-- Footer section end -->
+
+    </section>
+
+    <!--Javascript section start-->
+    <script>
+        /*Hamburger script start*/
+        function changeDisplay() {
+            var x = document.getElementById("menu");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function hmbDisplay() {
+            var x = document.getElementById("menu");
+
+            x.style.display = "none";
+        }
+        /*Hamburger script end*/
+
+        /*Testimony script start*/
+        var tstmny = ["As the President, he is </br> responsible for new strategic</br> initiatives",
+            "As one of </br> the cofounders and</br> the CEO, He is</br> responsible for the company’s</br> strategy.",
+            "Is responsible for global</br> business development and</br> strategic account</br> management.",
+            "As the President, he is </br> responsible for new strategic</br> initiatives",
+            "Is responsible for global</br> business development and</br> strategic account</br> management.",];
+        var role = ["Precident", "CEO", "Excutive VP", "Vice-Precident", "Excutive"];
+
+
+        var num = 2
+        var myVar = setInterval(myTimer, 3000);
+
+        function myTimer() {
+            if (num < 5) {
+                myfunction2(num)
+                num = num + 1
+            } else {
+                num = 2
+                myfunction2(num)
+            }
+        }
+
+        function myfunction1(btnNO) {
+
+            document.getElementById("change" + 1).innerHTML = tstmny[0]
+            document.getElementById("rchange" + 1).innerHTML = role[0]
+
+            document.getElementById("change" + 2).innerHTML = tstmny[1]
+            document.getElementById("rchange" + 2).innerHTML = role[1]
+
+            document.getElementById("change" + 3).innerHTML = tstmny[2]
+            document.getElementById("rchange" + 3).innerHTML = role[2]
+        }
+
+
+        function myfunction2(btnNO) {
+
+            document.getElementById("change" + 1).innerHTML = tstmny[btnNO - 2]
+            document.getElementById("rchange" + 1).innerHTML = role[btnNO - 2]
+
+            document.getElementById("change" + 2).innerHTML = tstmny[btnNO - 1]
+            document.getElementById("rchange" + 2).innerHTML = role[btnNO - 1]
+
+            document.getElementById("change" + 3).innerHTML = tstmny[btnNO]
+            document.getElementById("rchange" + 3).innerHTML = role[btnNO]
+        }
+
+        /*Testimony script end*/
+    </script>
+    <!--Javascript section end-->
+</body>
+
+</html>
